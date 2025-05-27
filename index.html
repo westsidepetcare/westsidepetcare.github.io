@@ -6,23 +6,153 @@
 
   <meta charset="UTF-8" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Westside Pet Care</title>
 
   <style>
 
-    body { font-family: sans-serif; background: #f6f1eb; color: #5f5f5f; margin: 0; }
+    body {
 
-    header { background: #cbdac8; padding: 3em 1em; text-align: center; }
+      font-family: 'Segoe UI', sans-serif;
 
-    header h1 { margin: 0; }
+      margin: 0;
 
-    section { padding: 2em 1em; max-width: 800px; margin: auto; }
+      color: #2a2a2a;
 
-    .blog-preview { background: #d9c8bb; padding: 1em; margin-top: 1em; border-radius: 5px; }
+      background-color: #fdfdfc;
 
-    footer { background: #cbdac8; padding: 1em; text-align: center; font-size: 0.9em; }
+    }
+
+    header {
+
+      background-color: #dfeee7;
+
+      padding: 40px 20px;
+
+      text-align: center;
+
+    }
+
+    header h1 {
+
+      margin: 0;
+
+      font-size: 2.8rem;
+
+      color: #2e4f38;
+
+    }
+
+    header p {
+
+      font-size: 1.2rem;
+
+      margin-top: 10px;
+
+      color: #425b4b;
+
+    }
+
+    .hero {
+
+      width: 100%;
+
+      height: 300px;
+
+      overflow: hidden;
+
+      position: relative;
+
+    }
+
+    .hero img {
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      position: absolute;
+
+      animation: slide 15s infinite alternate ease-in-out;
+
+    }
+
+    @keyframes slide {
+
+      0%   {left: 0;}
+
+      33%  {left: -100%;}
+
+      66%  {left: -200%;}
+
+      100% {left: 0;}
+
+    }
+
+    section {
+
+      padding: 40px 20px;
+
+      max-width: 900px;
+
+      margin: auto;
+
+    }
+
+    section h2 {
+
+      font-size: 2rem;
+
+      margin-bottom: 10px;
+
+      color: #2e4f38;
+
+    }
+
+    section p, li {
+
+      font-size: 1.1rem;
+
+      line-height: 1.6;
+
+    }
+
+    ul {
+
+      padding-left: 20px;
+
+    }
+
+    .contact {
+
+      background-color: #f3f3f3;
+
+      padding: 20px;
+
+      text-align: center;
+
+    }
+
+    .contact h2 {
+
+      margin-top: 0;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 20px;
+
+      font-size: 0.9rem;
+
+      color: #888;
+
+    }
 
   </style>
 
@@ -36,9 +166,21 @@
 
   <h1>Westside Pet Care</h1>
 
-  <p>Reliable, Loving, and Professional Pet Sitting Services</p>
+  <p>Compassionate, reliable overnight care for pets – in the comfort of their own home</p>
 
 </header>
+
+
+
+<div class="hero">
+
+  <img src="https://placekitten.com/1200/300" alt="Pet 1" />
+
+  <img src="https://place-puppy.com/1200x300" alt="Pet 2" />
+
+  <img src="https://images.unsplash.com/photo-1601758174620-03f633f2664f?fit=crop&w=1200&q=80" alt="Pet 3" />
+
+</div>
 
 
 
@@ -46,7 +188,7 @@
 
   <h2>About</h2>
 
-  <p>Welcome to Westside Pet Care! We offer top-quality care for your pets while you're away. Whether it's for a weekend or a month, your pets are in safe hands.</p>
+  <p>Hello! I’m Anne, the heart and hands behind Westside Pet Care. With a strong sense of responsibility and a deep love for animals, I provide professional overnight pet sitting tailored to your pet’s comfort and needs. Whether you're away for a weekend or an extended trip, I’ll be there to care for your pets as if they were my own. I’m based in Atlanta but proudly travel nationwide for select clients.</p>
 
 </section>
 
@@ -56,17 +198,33 @@
 
   <h2>Services</h2>
 
+  <p><strong>Overnight Pet Sitting – $120/night</strong><br/>
+
+  + $5 per additional animal</p>
+
+  <p>Each overnight stay includes:</p>
+
   <ul>
 
-    <li>Overnight House Sitting</li>
+    <li>Morning and evening feedings</li>
 
-    <li>Dog Walking</li>
+    <li>Walks or potty breaks</li>
 
-    <li>Cat Care</li>
+    <li>Medication administration</li>
 
-    <li>Medication Administration</li>
+    <li>Litter box or cage cleaning</li>
+
+    <li>Basic grooming like brushing or paw wiping</li>
+
+    <li>Lots of play, love, and companionship</li>
+
+    <li>Light home care – mail, packages, plants, etc.</li>
 
   </ul>
+
+  <p>I care for dogs, cats, birds, reptiles, and some farm animals.<br/>
+
+  For custom services like drop-in visits or dog walks, please contact me directly.</p>
 
 </section>
 
@@ -76,7 +234,43 @@
 
   <h2>Policies</h2>
 
-  <p>We take your pets' safety seriously. We follow detailed care instructions, provide updates, and never leave your pets alone for long stretches.</p>
+  <ul>
+
+    <li>Pets must be up to date on vaccinations</li>
+
+    <li>A meet-and-greet is strongly recommended before the first stay</li>
+
+    <li>The home must be safe, clean, and have clear instructions provided</li>
+
+    <li>I do not offer pet boarding in my home at this time</li>
+
+  </ul>
+
+</section>
+
+
+
+<section>
+
+  <h2>Verified Reviews</h2>
+
+  <p><strong>Carly T.</strong> – “Anne did a fantastic job caring for our senior cat while we were out of the country for 10 days. She sent daily updates and a ton of photos and videos. We returned home to a very content cat! Anne was also very respectful of our home – it was exactly as we left it, maybe even a little cleaner!”</p>
+
+  <p><strong>Trey S.</strong> – “Anne was amazing! Peggy was a little nervous at first, but Anne quickly figured out her love language and won her over with treats and cuddles. She took great care of my pets and my home. Her compassion and attention to detail stood out.”</p>
+
+  <p><strong>Blake C.</strong> – “Anne was amazing with our dogs and cats! She made sure they were well fed, exercised, and happy. Her reliability gave us peace of mind. Highly recommend her for anyone needing pet care!”</p>
+
+</section>
+
+
+
+<section class="contact">
+
+  <h2>Contact</h2>
+
+  <p><strong>Phone:</strong> <a href="tel:6784999103">678-499-9103</a><br/>
+
+     <strong>Email:</strong> <a href="mailto:westsidepetcare.atl@gmail.com">westsidepetcare.atl@gmail.com</a></p>
 
 </section>
 
@@ -86,13 +280,9 @@
 
   <h2>Blog</h2>
 
-  <div class="blog-preview">
+  <p>Visit the blog for updates on recent travels, pet care tips, and behind-the-scenes stories from my house sits around the country.</p>
 
-    <strong>My First Traveling Pet Sit in Tennessee</strong><br>
-
-    Coming soon...
-
-  </div>
+  <p><a href="blog.html">Read the Blog →</a></p>
 
 </section>
 
@@ -100,7 +290,7 @@
 
 <footer>
 
-  <p>Contact: westsidepetcare@gmail.com | &copy; 2025 Westside Pet Care</p>
+  &copy; 2025 Westside Pet Care. All rights reserved.
 
 </footer>
 
