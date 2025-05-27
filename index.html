@@ -8,141 +8,149 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Westside Pet Care</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Westside Pet Care, LLC</title>
 
   <style>
 
     body {
 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
       margin: 0;
 
-      font-family: 'Lato', sans-serif;
+      background-color: #f6f3ed;
 
-      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
-
-      background-color: #f6f6f4;
-
-      color: #2e2e2e;
+      color: #333;
 
     }
 
 
 
-    .hero-image {
+    header {
 
-      background-image: url('https://images.pexels.com/photos/18124745/pexels-photo-18124745.jpeg');
+      background-color: #2f3e2f;
+
+      color: #fff;
+
+      padding: 20px 40px;
+
+      text-align: center;
+
+    }
+
+
+
+    header img {
+
+      max-height: 90px;
+
+      margin-bottom: 10px;
+
+    }
+
+
+
+    nav {
+
+      background-color: #e0d8cc;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 40px;
+
+      padding: 10px 0;
+
+    }
+
+
+
+    nav a {
+
+      text-decoration: none;
+
+      color: #2f3e2f;
+
+      font-weight: bold;
+
+    }
+
+
+
+    .hero {
+
+      background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1600&q=80');
 
       background-size: cover;
 
       background-position: center;
 
+      height: 300px;
+
       position: relative;
 
-      height: 400px;
-
-      filter: grayscale(100%) brightness(80%);
+      filter: grayscale(40%) brightness(0.9);
 
     }
 
 
 
-    .hero-text {
+    .hero::after {
+
+      content: "Compassionate Care When You're Not There";
 
       position: absolute;
 
-      top: 50%;
+      bottom: 20px;
 
-      left: 50%;
-
-      transform: translate(-50%, -50%);
+      left: 40px;
 
       color: #fff;
 
-      text-align: center;
+      font-size: 2rem;
 
-      background-color: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.4);
 
-      padding: 20px;
+      padding: 10px 20px;
 
-      border-radius: 10px;
+      border-radius: 5px;
 
     }
 
 
 
-    .container {
+    main {
 
       max-width: 900px;
 
-      margin: 0 auto;
+      margin: 40px auto;
 
-      padding: 40px 20px;
-
-    }
-
-
-
-    .card {
-
-      background-color: #ffffff;
-
-      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
-
-      border-radius: 10px;
-
-      padding: 30px;
-
-      margin-bottom: 40px;
+      padding: 0 20px;
 
     }
 
 
 
-    .card h2 {
+    section {
 
-      margin-top: 0;
+      margin-bottom: 50px;
 
-      font-size: 1.8rem;
+      padding: 20px;
 
-      color: #2f4f3f;
+      background-color: #fffaf3;
 
-    }
+      border-radius: 8px;
 
-
-
-    .card p, .card li {
-
-      font-size: 1.05rem;
-
-      line-height: 1.7;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
 
     }
 
 
 
-    ul {
+    h2 {
 
-      padding-left: 20px;
-
-    }
-
-
-
-    .contact {
-
-      text-align: center;
-
-    }
-
-
-
-    .contact a {
-
-      color: #2f4f3f;
-
-      text-decoration: none;
+      color: #2f3e2f;
 
     }
 
@@ -150,21 +158,23 @@
 
     footer {
 
+      background-color: #2f3e2f;
+
+      color: white;
+
       text-align: center;
 
+      padding: 20px;
+
       font-size: 0.9rem;
-
-      padding: 30px 20px;
-
-      color: #777;
 
     }
 
 
 
-    a:hover {
+    .contact-info {
 
-      text-decoration: underline;
+      margin-top: 10px;
 
     }
 
@@ -176,133 +186,139 @@
 
 
 
-<div class="hero-image">
+<header>
 
-  <div class="hero-text">
+  <img src="9A34FE32-1171-447E-9C7E-0218A7D70E73.png" alt="Westside Pet Care logo">
 
-    <h1>Westside Pet Care</h1>
+  <h1>Westside Pet Care, LLC</h1>
 
-    <p>Compassionate, reliable overnight care for pets – in the comfort of their own home</p>
-
-  </div>
-
-</div>
+</header>
 
 
 
-<div class="container">
+<nav>
+
+  <a href="#about">About</a>
+
+  <a href="#services">Services</a>
+
+  <a href="#policies">Policies</a>
+
+  <a href="#reviews">Reviews</a>
+
+  <a href="#contact">Contact</a>
+
+  <a href="blog.html">Blog</a>
+
+</nav>
 
 
 
-  <div class="card">
+<div class="hero"></div>
+
+
+
+<main>
+
+
+
+  <section id="about">
 
     <h2>About</h2>
 
-    <p>Hello! I’m Anne, the heart and hands behind Westside Pet Care. With a strong sense of responsibility and a deep love for animals, I provide professional overnight pet sitting tailored to your pet’s comfort and needs. Whether you're away for a weekend or an extended trip, I’ll be there to care for your pets as if they were my own.</p>
+    <p>I’ve been providing in-home overnight pet sitting services since 2019. Throughout my life, I’ve had the privilege of caring for a wide variety of animals—including dogs, cats, birds, fish, lizards, hamsters, chickens, and horses. I’m based in West Atlanta and often travel throughout the country for pet sitting. I treat your pets and your home with the same care and attention I would give my own. A complimentary meet & greet is required prior to the first stay.</p>
 
-    <p>I'm based in Atlanta but frequently travel across the country to care for pets in a variety of homes and environments.</p>
-
-  </div>
+  </section>
 
 
 
-  <div class="card">
+  <section id="services">
 
     <h2>Services</h2>
 
-    <p><strong>Overnight Pet Sitting – $120/night</strong><br/>
-
-    + $5 per additional animal</p>
-
-    <p>Each overnight stay includes:</p>
+    <p>This is not a comprehensive list—just a preview of what can be provided while pet parents are away!</p>
 
     <ul>
 
-      <li>Morning and evening feedings</li>
+      <li><strong>Overnight Pet Sitting:</strong> $95–$120 per night depending on travel and care needs.</li>
 
-      <li>Walks or potty breaks</li>
+      <li>Feeding and fresh water</li>
+
+      <li>Walks and playtime</li>
 
       <li>Medication administration</li>
 
-      <li>Litter box or cage cleaning</li>
+      <li>Clean-up and litter box maintenance</li>
 
-      <li>Basic grooming like brushing or paw wiping</li>
+      <li>Home security checks</li>
 
-      <li>Lots of play, love, and companionship</li>
-
-      <li>Light home care – mail, packages, plants, etc.</li>
+      <li>Bringing in mail/packages</li>
 
     </ul>
 
-    <p>I care for dogs, cats, birds, reptiles, and some farm animals. For custom services like drop-in visits or dog walks, please contact me directly.</p>
+    <p>Please contact me directly to discuss additional services such as drop-in visits and dog walks.</p>
 
-  </div>
+  </section>
 
 
 
-  <div class="card">
+  <section id="policies">
 
     <h2>Policies</h2>
 
     <ul>
 
-      <li>Pets must be up to date on vaccinations</li>
+      <li>Meet and greet required before first stay</li>
 
-      <li>A meet-and-greet is strongly recommended before the first stay</li>
+      <li>Payment for services is due prior to the stay</li>
 
-      <li>The home must be safe, clean, and have clear instructions provided</li>
+      <li>Home must be smoke-free, safe, and have care instructions provided</li>
 
     </ul>
 
-  </div>
+  </section>
 
 
 
-  <div class="card">
+  <section id="reviews">
 
     <h2>Verified Reviews</h2>
 
-    <p><strong>Carly T.</strong> – “Anne did a fantastic job caring for our senior cat while we were out of the country for 10 days. She sent daily updates and a ton of photos and videos. We returned home to a very content cat! Anne was also very respectful of our home – it was exactly as we left it, maybe even a little cleaner!”</p>
+    <p><strong>Carly T:</strong> "Anne did a fantastic job caring for our senior cat while we were out of the country for 10 days. She sent daily updates and a ton of photos and videos. We returned home to a very content cat—and our house was maybe even a little cleaner than we left it!"</p>
 
-    <p><strong>Trey S.</strong> – “Anne was amazing! Peggy was a little nervous at first, but Anne quickly figured out her love language and won her over with treats and cuddles. She took great care of my pets and my home. Her compassion and attention to detail stood out.”</p>
+    <p><strong>Trey S:</strong> "Anne was amazing! Peggy was a little nervous at first, but she quickly figured out Peggy’s love language and won her over with treats and cuddles. The attention to detail and sense of compassion was easily seen and felt."</p>
 
-    <p><strong>Blake C.</strong> – “Anne was amazing with our dogs and cats! She made sure they were well fed, exercised, and happy. Her reliability gave us peace of mind. Highly recommend her for anyone needing pet care!”</p>
+    <p><strong>Blake C:</strong> "Anne was amazing with our dogs and cats! She made sure they were well-fed, exercised, and happy during her daily visits. Highly recommend Anne for anyone needing pet care!"</p>
 
-  </div>
+  </section>
 
 
 
-  <div class="card contact">
+  <section id="contact">
 
     <h2>Contact</h2>
 
-    <p><strong>Phone:</strong> <a href="tel:6784999103">678-499-9103</a><br/>
+    <p>If you're interested in working with me, please reach out directly:</p>
 
-       <strong>Email:</strong> <a href="mailto:westsidepetcare.atl@gmail.com">westsidepetcare.atl@gmail.com</a></p>
+    <div class="contact-info">
 
-  </div>
+      <p><strong>Phone:</strong> 678-499-9103</p>
 
+      <p><strong>Email:</strong> <a href="mailto:westsidepetcare.atl@gmail.com">westsidepetcare.atl@gmail.com</a></p>
 
+    </div>
 
-  <div class="card">
-
-    <h2>Blog</h2>
-
-    <p>Visit the blog for updates on recent travels, pet care tips, and behind-the-scenes stories from my house sits around the country.</p>
-
-    <p><a href="blog.html">Read the Blog →</a></p>
-
-  </div>
+  </section>
 
 
 
-</div>
+</main>
 
 
 
 <footer>
 
-  &copy; 2025 Westside Pet Care. All rights reserved.
+  &copy; 2025 Westside Pet Care, LLC. All rights reserved.
 
 </footer>
 
