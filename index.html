@@ -13,6 +13,15 @@
       color: #2e2e2e;
     }
 
+    .hero-image {
+      background-image: url('https://cdn.pixabay.com/photo/2017/08/07/18/57/dog-2606759_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 400px;
+      filter: grayscale(15%) brightness(85%);
+    }
+
     .hero-text {
       position: absolute;
       top: 50%;
@@ -23,6 +32,8 @@
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px;
       border-radius: 10px;
+      font-weight: 700;
+      font-size: 1.25rem;
     }
 
     .container {
@@ -75,74 +86,35 @@
     }
   </style>
 </head>
+
 <body>
 
-<!-- Hero Image Section -->
-<div class="hero-image-container" style="position: relative;">
-  <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-iXcMDEyKYmmWkAeZBEXVpJDP/user-yiw2r5zP1vx1dKtn1GpUB95F/img-SNl3KOK5Azz3SZkSdzdu80zg.png?st=2024-05-27T18%3A26%3A51Z&se=2024-05-27T20%3A26%3A51Z&sp=r&sv=2021-08-06&sr=b&sig=wlHJyJMg3rWxe%2Fr5gNvcp3Mlzz3h3dnIatdft4C%2Fn2o%3D" 
-       alt="Vintage cat and dog in cozy home" 
-       style="width: 100%; height: 400px; object-fit: cover; filter: grayscale(10%) brightness(90%);">
-  <div class="hero-text">
-    <p>Compassionate, reliable overnight care for pets – in the comfort of their own home</p>
-  </div>
-</div>
-
-<div class="container">
-  <div class="card">
-    <img src="logowspc.png" alt="Westside Pet Care logo" style="max-height: 300px; margin-bottom: 40px;">
-    <h2>About</h2>
-    <p>Hello! I’m Anne, the heart and hands behind Westside Pet Care, LLC. With a strong sense of responsibility and a deep love for animals, I provide professional overnight pet sitting tailored to your pet’s comfort and needs. Whether you're away for a weekend or an extended trip, I’ll be there to care for your pets as if they were my own.</p>
-    <p>I'm based in West Atlanta but frequently travel across the country to care for pets in a variety of homes and environments. I have been providing in-home services since 2019, but I've cared for animals of all kinds throughout my life. Dogs, cats, birds, fish, farm animals, horses — these are just a few of the beautiful pets I've had the honor of caring for. I can't wait to meet you and your best friends.</p>
+  <div class="hero-image">
+    <div class="hero-text">
+      Compassionate, reliable overnight care for pets – in the comfort of their own home
+    </div>
   </div>
 
-  <div class="card">
-    <h2>Services</h2>
-    <p><strong>Overnight Pet Sitting – $95–$120/night</strong><br/></p>
-    <p>Although this is not a comprehensive list of services provided, each overnight stay includes:</p>
-    <ul>
-      <li>Morning and evening feedings</li>
-      <li>Walks or potty breaks</li>
-      <li>Medication administration</li>
-      <li>Litter box or cage cleaning</li>
-      <li>Basic grooming like brushing or paw wiping</li>
-      <li>Lots of play, love, and companionship</li>
-      <li>Light home care – mail, packages, plants, etc.</li>
-    </ul>
-    <p>I care for dogs, cats, birds, reptiles, and some farm animals. For custom services like drop-in visits or dog walks, please contact me directly.</p>
-  </div>
+  <div class="container">
 
-  <div class="card">
-    <h2>Policies</h2>
-    <ul>
-      <li>Pets must be up to date on vaccinations</li>
-      <li>Let's meet-up before the first stay so we can get to know each other</li>
-      <li>The home must be safe, smoke-free, and have instructions provided</li>
-    </ul>
-  </div>
+    <div class="card">
+      <img src="logowspc.png" alt="Westside Pet Care logo" style="max-height: 300px; margin-bottom: 40px;">
+      <h2>About</h2>
+      <p>Hello! I’m Anne, the heart and hands behind Westside Pet Care, LLC. With a strong sense of responsibility and a deep love for animals, I provide professional overnight pet sitting tailored to your pet’s comfort and needs. Whether you're away for a weekend or an extended trip, I’ll be there to care for your pets as if they were my own.</p>
+      <p>I'm based in West Atlanta but frequently travel across the country to care for pets in a variety of homes and environments. I have been providing in-home services since 2019, but I've cared for animals of all kinds throughout my life. Dogs, cats, birds, fish, farm animals, horses - these are just a few of the beautiful pets I've had the honor of caring for. I can't wait to meet you and your best friends.</p>
+    </div>
 
-  <div class="card">
-    <h2>Verified Reviews</h2>
-    <p><strong>Carly T.</strong> – “Anne did a fantastic job caring for our senior cat while we were out of the country for 10 days. She sent daily updates and a ton of photos and videos. We returned home to a very content cat! Anne was also very respectful of our home – it was exactly as we left it, maybe even a little cleaner!”</p>
-    <p><strong>Trey S.</strong> – “Anne was amazing! Peggy was a little nervous at first, but Anne quickly figured out her love language and won her over with treats and cuddles. She took great care of my pets and my home. Her compassion and attention to detail stood out.”</p>
-    <p><strong>Blake C.</strong> – “Anne was amazing with our dogs and cats! She made sure they were well fed, exercised, and happy. Her reliability gave us peace of mind. Highly recommend her for anyone needing pet care!”</p>
-  </div>
-
-  <div class="card contact">
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> <a href="tel:6784999103">678-499-9103</a><br/>
-       <strong>Email:</strong> <a href="mailto:westsidepetcare.atl@gmail.com">westsidepetcare.atl@gmail.com</a></p>
-  </div>
-
-  <div class="card">
-    <h2>Blog</h2>
-    <p>Visit the blog for updates on recent travels, pet care tips, and behind-the-scenes stories from my house sits around the country.</p>
-    <p><a href="blog.html">Read the Blog →</a></p>
-  </div>
-</div>
-
-<footer>
-  &copy; 2025 Westside Pet Care, LLC. All rights reserved.
-</footer>
-
-</body>
-</html>
+    <div class="card">
+      <h2>Services</h2>
+      <p><strong>Overnight Pet Sitting – $95- $120/night</strong></p>
+      <p>Although this is not a comprehensive list of services provided, each overnight stay includes:</p>
+      <ul>
+        <li>Morning and evening feedings</li>
+        <li>Walks or potty breaks</li>
+        <li>Medication administration</li>
+        <li>Litter box or cage cleaning</li>
+        <li>Basic grooming like brushing or paw wiping</li>
+        <li>Lots of play, love, and companionship</li>
+        <li>Light home care – mail, packages, plants, etc.</li>
+      </ul>
+      <p>I care for dogs, cats, birds, reptiles, and some farm animals. For custom servi
