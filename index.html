@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,8 +9,8 @@
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
-      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
-      background-color: #f6f6f4;
+      background: linear-gradient(135deg, #fddf6f, #f18b4f, #e24e2b); /* Warm gradient from sandy yellow to sunset orange */
+      background-attachment: fixed;
       color: #2e2e2e;
     }
 
@@ -21,7 +20,7 @@
       background-position: center;
       position: relative;
       height: 400px;
-      filter: grayscale(20%) brightness(95%) contrast(95%);
+      filter: brightness(70%) contrast(100%) saturate(130%);
     }
 
     .hero-text {
@@ -48,29 +47,32 @@
     }
 
     .card {
-      background-color: #fffaf0; /* Light warm background */
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Softer, warmer shadow */
-      border-radius: 15px; /* Rounded edges for a friendly, inviting look */
-      padding: 30px;
+      background: linear-gradient(145deg, #f3b08c, #e59d70); /* Soft terracotta to gold gradient */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+      border-radius: 20px;
+      padding: 35px;
       margin-bottom: 40px;
-      transition: all 0.3s ease; /* Smooth transition for hover effect */
+      transition: all 0.4s ease-in-out; /* Smooth transition */
+      opacity: 0.95;
+      backdrop-filter: blur(8px); /* Soft blur for blending edges */
     }
 
     .card:hover {
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
-      transform: translateY(-5px); /* Slight lift effect on hover */
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+      transform: translateY(-8px); /* Lift effect */
+      opacity: 1;
     }
 
     .card h2 {
       margin-top: 0;
       font-size: 1.8rem;
-      color: #2f4f3f;
+      color: #3e4b3b; /* Earthy green for text */
     }
 
     .card p, .card li {
       font-size: 1.05rem;
       line-height: 1.7;
-      color: #555; /* Softer text color for a friendlier tone */
+      color: #5c5c5c;
     }
 
     ul {
@@ -82,7 +84,7 @@
     }
 
     .contact a {
-      color: #2f4f3f;
+      color: #3e4b3b;
       text-decoration: none;
     }
 
@@ -100,7 +102,6 @@
 </head>
 
 <body>
-
   <div class="hero-image">
     <div class="hero-text">
       <h1>Your Pet's Home Away from Home</h1>
@@ -109,23 +110,22 @@
   </div>
 
   <div class="container">
-
     <div class="card" style="display: flex; align-items: center; flex-wrap: wrap; gap: 30px;">
       <img src="logowspc.png" alt="Westside Pet Care logo" style="max-height: 250px; flex: 1 1 250px;">
       <div style="flex: 2 1 300px;">
-        <h2 style="font-size: 1.5rem; color: #2f4f3f;">Overnight care for pets – in the comfort of their own home</h2>
+        <h2 style="font-size: 1.5rem; color: #3e4b3b;">Overnight care for pets – in the comfort of their own home</h2>
       </div>
     </div>
 
     <div class="card">
       <h2>About</h2>
-      <p>Hi there! I’m Anne, your go-to pet care enthusiast at Westside Pet Care, LLC. As an animal lover who’s been looking after pets for as long as I can remember, I know how important it is to make sure your pets are safe, comfortable, and happy when you're away. I specialize in overnight care that’s tailored to meet each pet’s unique personality and needs.</p>
-      <p>I'm based in West Atlanta but frequently travel across the country to care for pets in a variety of homes and environments. I’ve been providing in-home services since 2019, but I’ve cared for animals of all kinds throughout my life. Dogs, cats, birds, fish, farm animals, horses—these are just a few of the beautiful pets I've had the honor of caring for. I can’t wait to meet you and your best friends.</p>
+      <p>Hello! I’m Anne, the heart and hands behind Westside Pet Care, LLC. With a strong sense of responsibility and a deep love for animals, I provide professional overnight pet sitting tailored to your pet’s comfort and needs. Whether you're away for a weekend or an extended trip, I’ll be there to care for your pets as if they were my own.</p>
+      <p>I'm based in West Atlanta but frequently travel across the country to care for pets in a variety of homes and environments. I have been providing in-home services since 2019, but I've cared for animals of all kinds throughout my life. Dogs, cats, birds, fish, farm animals, horses — these are just a few of the beautiful pets I've had the honor of caring for. I can't wait to meet you and your best friends.</p>
     </div>
 
     <div class="card">
       <h2>Services</h2>
-      <p><strong>Overnight Pet Sitting – Starting at $95/night</strong></p>
+      <p><strong>Overnight Pet Sitting – $95–$120/night</strong></p>
       <p>Although this is not a comprehensive list of services provided, each overnight stay includes:</p>
       <ul>
         <li>Morning and evening feedings</li>
@@ -142,38 +142,37 @@
     <div class="card">
       <h2>Policies</h2>
       <ul>
-        <li>For everyone’s safety and peace of mind, your pets must be up-to-date on vaccinations. Let’s keep them healthy and happy!</li>
-        <li>Let's meet-up before the first stay so we can get to know each other.</li>
-        <li>Overnight visits in drug-free and smoke-free homes only.</li>
+        <li>Pets must be up to date on vaccinations</li>
+        <li>Let's meet-up before the first stay so we can get to know each other</li>
+        <li>Overnight visits in drug-free and smoke-free homes only</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>What Pet Parents Are Saying</h2>
-      <p><strong>Carly T.</strong> – “Anne was amazing with our senior cat! She kept us updated with daily photos and videos. We came home to a super happy and relaxed kitty, and our house was just as we left it—maybe even cleaner!”</p>
-      <p><strong>Trey S.</strong> – “Anne instantly bonded with my shy pup, Peggy. She figured out exactly how to win her over and made sure she felt safe and loved the entire time. I can’t recommend Anne enough!”</p>
-      <p><strong>Blake C.</strong> – “Anne made sure our dogs and cats were pampered and happy while we were away. We came home to calm, well-fed pets, and that peace of mind was priceless. Highly recommend!”</p>
+      <h2>Verified Reviews</h2>
+      <p><strong>Carly T.</strong> – “Anne did a fantastic job caring for our senior cat while we were out of the country for 10 days. She sent daily updates and a ton of photos and videos. We returned home to a very content cat! Anne was also very respectful of our home – it was exactly as we left it, maybe even a little cleaner!”</p>
+      <p><strong>Trey S.</strong> – “Anne was amazing! Peggy was a little nervous at first, but Anne quickly figured out her love language and won her over with treats and cuddles. She took great care of my pets and my home. Her compassion and attention to detail stood out.”</p>
+      <p><strong>Blake C.</strong> – “Anne was amazing with our dogs and cats! She made sure they were well fed, exercised, and happy. Her reliability gave us peace of mind. Highly recommend her for anyone needing pet care!”</p>
     </div>
 
     <div class="card contact">
-      <h2>Let’s Connect!</h2>
-      <p>If you have any questions or would like to schedule a meet-and-greet, I’d love to chat! Feel free to reach out to me at:</p>
+      <h2>Contact</h2>
       <p><strong>Phone:</strong> <a href="tel:6784999103">678-499-9103</a><br/>
          <strong>Email:</strong> <a href="mailto:westsidepetcare.atl@gmail.com">westsidepetcare.atl@gmail.com</a></p>
     </div>
 
     <div class="card">
-      <h2>The Pawspective Blog</h2>
-      <p>Join me behind the scenes of Westside Pet Care! From helpful pet care tips to adorable pet stories, I share everything that makes caring for animals so special.</p>
+      <h2>Blog</h2>
+      <p>Catch up on the latest pet care stories, tips, and behind-the-scenes moments from Westside Pet Care.</p>
       <a href="https://westsidepetcare.blogspot.com/" target="_blank">Visit The Pawspective: Westside Stories</a>
     </div>
 
   </div>
 
   <footer>
-    <p>&copy; 2025 Westside Pet Care, LLC. All rights reserved. Because your pets deserve the best care possible.</p>
+    &copy; 2025 Westside Pet Care, LLC. All rights reserved.
   </footer>
 
 </body>
-
 </html>
+
