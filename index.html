@@ -47,16 +47,18 @@
     }
 
     .card {
-      background-color: white; /* White card background */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 15px;
-      padding: 30px;
-      margin-bottom: 40px;
-      position: relative;
-      overflow: hidden; /* Prevents the dust from going out of bounds */
-      transition: all 0.4s ease-in-out; /* Subtle hover effects */
-      background: #fff; /* Ensures white background */
-    }
+  background: linear-gradient(rgba(248, 241, 231, 0.85), rgba(248, 241, 231, 0.85)),
+              url('https://images.pexels.com/photos/4046683/pexels-photo-4046683.jpeg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
 
     /* Gold Dust Effect */
     .card::before {
