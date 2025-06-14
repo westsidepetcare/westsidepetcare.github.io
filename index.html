@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
-      background: linear-gradient(135deg, #fddf6f, #f18b4f, #e24e2b); /* Warm gradient from sandy yellow to sunset orange */
-      background-attachment: fixed;
+      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png'); /* Light texture */
+      background-color: #f6f6f4; /* Soft off-white background */
       color: #2e2e2e;
     }
 
@@ -20,7 +20,7 @@
       background-position: center;
       position: relative;
       height: 400px;
-      filter: brightness(70%) contrast(100%) saturate(130%);
+      filter: brightness(80%) contrast(100%) saturate(110%); /* Slightly enhanced warmth */
     }
 
     .hero-text {
@@ -47,26 +47,26 @@
     }
 
     .card {
-      background: linear-gradient(145deg, #f3b08c, #e59d70); /* Soft terracotta to gold gradient */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
-      border-radius: 20px;
-      padding: 35px;
+      background-color: #fff8e1; /* Soft sand color for the cards */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      padding: 30px;
       margin-bottom: 40px;
-      transition: all 0.4s ease-in-out; /* Smooth transition */
+      transition: all 0.4s ease-in-out; /* Subtle hover effects */
       opacity: 0.95;
-      backdrop-filter: blur(8px); /* Soft blur for blending edges */
+      backdrop-filter: blur(6px);
     }
 
     .card:hover {
-      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
-      transform: translateY(-8px); /* Lift effect */
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      transform: translateY(-6px); /* Soft lift effect */
       opacity: 1;
     }
 
     .card h2 {
       margin-top: 0;
       font-size: 1.8rem;
-      color: #3e4b3b; /* Earthy green for text */
+      color: #2f4f3f; /* Soft earth green */
     }
 
     .card p, .card li {
@@ -175,4 +175,5 @@
 
 </body>
 </html>
+
 
