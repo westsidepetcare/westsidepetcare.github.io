@@ -9,9 +9,9 @@
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
-      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png'); /* Light texture */
-      background-color: #f8f1e7; /* Soft light beige background */
-      color: #3c3c3c; /* Darker earthy text color for readability */
+      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-color: #f8f1e7;
+      color: #3c3c3c;
     }
 
     .hero-image {
@@ -23,8 +23,8 @@
     }
 
     .hero-text {
-      background-color: #f8f1e7; /* Soft beige background */
-      color: #3c3c3c; /* Darker earthy text color */
+      background-color: #f8f1e7;
+      color: #3c3c3c;
       padding: 20px;
       text-align: center;
       font-size: 2rem;
@@ -37,7 +37,7 @@
     .hero-text p {
       font-size: 1.2rem;
       margin-top: 5px;
-      color: #5c5c5c; /* Muted dark gray */
+      color: #5c5c5c;
     }
 
     .container {
@@ -47,50 +47,36 @@
     }
 
     .card {
-  background: linear-gradient(rgba(248, 241, 231, 0.85), rgba(248, 241, 231, 0.85)),
-              url('https://images.pexels.com/photos/4046683/pexels-photo-4046683.jpeg');
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 30px;
-  margin-bottom: 40px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s ease-in-out;
-}
-
-    /* Gold Dust Effect */
-    .card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://www.transparenttextures.com/patterns/cork.png'); /* Cork pattern as a subtle gold texture */
-      opacity: 0.1;  /* Light opacity for a more natural effect */
-      z-index: 1; /* Ensure it's above the background but below text */
+      background: url('https://images.pexels.com/photos/4046683/pexels-photo-4046683.jpeg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
 
     .card:hover {
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-      transform: translateY(-6px); /* Soft lift effect */
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+      transform: translateY(-6px);
     }
 
     .card h2 {
       margin-top: 0;
       font-size: 1.8rem;
-      color: #605e5e; /* Olive green, inspired by your blog */
-      z-index: 2; /* Keep the text above the dust */
-      font-weight: 700; /* Bold for headings */
+      color: #ffffff;
+      font-weight: 700;
     }
 
     .card p, .card li {
       font-size: 1.05rem;
       line-height: 1.7;
-      color: #5c5c5c; /* Muted dark gray for softer text */
-      z-index: 2; /* Keep the text above the dust */
+      color: #ffffff;
     }
 
     ul {
@@ -102,8 +88,8 @@
     }
 
     .contact a {
-      color: #5a6a3b; /* Muted olive green for the links */
-      text-decoration: none;
+      color: #ffffff;
+      text-decoration: underline;
     }
 
     footer {
@@ -118,22 +104,26 @@
     }
 
     .blog {
-      background-color: #fff4e6;
+      background: url('https://images.pexels.com/photos/4046683/pexels-photo-4046683.jpeg');
+      background-size: cover;
+      background-position: center;
       padding: 40px;
       border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
       text-align: center;
       margin-top: 50px;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     }
 
     .blog h2 {
       font-size: 2rem;
-      color: #5a6a3b; /* Muted olive green */
+      color: #ffffff;
     }
 
     .blog p {
       font-size: 1.1rem;
-      color: #5c5c5c;
+      color: #ffffff;
     }
 
   </style>
@@ -148,13 +138,6 @@
   </div>
 
   <div class="container">
-    <div class="card" style="display: flex; align-items: center; flex-wrap: wrap; gap: 30px;">
-      <img src="logowspc.png" alt="Westside Pet Care logo" style="max-height: 250px; flex: 1 1 250px;">
-      <div style="flex: 2 1 300px;">
-        <h2 style="font-size: 1.5rem; color: #3e4b3b;">Overnight care for pets – in the comfort of their own home</h2>
-      </div>
-    </div>
-
     <div class="card">
       <h2>About</h2>
        <p>Hi there! I’m Anne, your go-to pet care enthusiast at Westside Pet Care, LLC. As an animal lover who’s been looking after pets for as long as I can remember, I know how important it is to make sure your pets are safe, comfortable, and happy when you're away. I specialize in overnight care that’s tailored to meet each pet’s unique personality and needs.</p>
@@ -192,19 +175,21 @@
       <p><strong>Trey S.</strong> – “Anne was amazing! Peggy was a little nervous at first, but Anne quickly figured out her love language and won her over with treats and cuddles. She took great care of my pets and my home. Her compassion and attention to detail stood out.”</p>
       <p><strong>Blake C.</strong> – “Anne was amazing with our dogs and cats! She made sure they were well fed, exercised, and happy. Her reliability gave us peace of mind. Highly recommend her for anyone needing pet care!”</p>
     </div>
- <div class="card contact">
+
+    <div class="card contact">
       <h2>Let’s Connect!</h2>
       <p>If you have any questions or would like to schedule a meet-and-greet, I’d love to chat! Feel free to reach out to me at:</p>
       <p><strong>Phone:</strong> <a href="tel:6784999103">678-499-9103</a><br/>
          <strong>Email:</strong> <a href="mailto:westsidepetcare.atl@gmail.com">westsidepetcare.atl@gmail.com</a></p>
     </div>
 
-    <div class="card">
+    <div class="blog">
       <h2>The Pawspective: Westside Stories</h2>
       <p>Join me behind the scenes of Westside Pet Care! From helpful pet care tips to adorable pet stories, I share everything that makes caring for animals so special.</p>
-      <a href="https://www.westsidepetcare.blogspot.com" target="_blank">Visit The Pawspective: Westside Stories</a> <!-- Corrected the link here -->
+      <a href="https://www.westsidepetcare.blogspot.com" target="_blank" style="color:#ffffff; text-decoration: underline;">Visit The Pawspective: Westside Stories</a>
     </div>
-<footer>
+
+  <footer>
     <p>&copy; 2025 Westside Pet Care, LLC. All rights reserved. Your pet's new favorite Auntie.</p>
   </footer>
 </body>
