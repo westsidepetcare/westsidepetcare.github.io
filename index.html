@@ -22,7 +22,6 @@
       height: 400px;
     }
 
-    /* Adjusting the position of the hero text below the image */
     .hero-text {
       background-color: #f8f1e7; /* Soft beige background */
       color: #3c3c3c; /* Darker earthy text color */
@@ -53,11 +52,12 @@
       border-radius: 15px;
       padding: 30px;
       margin-bottom: 40px;
-      transition: all 0.4s ease-in-out; /* Subtle hover effects */
       position: relative;
+      overflow: hidden; /* Prevents the dust from going out of bounds */
+      transition: all 0.4s ease-in-out; /* Subtle hover effects */
     }
 
-    /* Adding light texture pattern behind the card text */
+    /* Gold Dust Effect */
     .card::before {
       content: "";
       position: absolute;
@@ -65,9 +65,9 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png'); /* Texture pattern */
-      opacity: 0.1;
-      z-index: -1;
+      background: url('https://www.transparenttextures.com/patterns/diamond.png'); /* Light gold dust effect */
+      opacity: 0.15;
+      z-index: 1; /* Ensure it's on top of the card but below text */
     }
 
     .card:hover {
@@ -79,12 +79,14 @@
       margin-top: 0;
       font-size: 1.8rem;
       color: #605e5e; /* Olive green, inspired by your blog */
+      z-index: 2; /* Keep the text above the dust */
     }
 
     .card p, .card li {
       font-size: 1.05rem;
       line-height: 1.7;
       color: #5c5c5c; /* Muted dark gray for softer text */
+      z-index: 2; /* Keep the text above the dust */
     }
 
     ul {
@@ -110,13 +112,31 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .blog {
+      background-color: #fff4e6;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .blog h2 {
+      font-size: 2rem;
+      color: #5a6a3b; /* Muted olive green */
+    }
+
+    .blog p {
+      font-size: 1.1rem;
+      color: #5c5c5c;
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="hero-image">
-    <!-- Hero image now stands alone -->
-  </div>
+  <div class="hero-image"></div>
 
   <div class="hero-text">
     <h1>Your Pet's Home Away from Home</h1>
@@ -171,10 +191,20 @@
 
     <div class="card contact">
       <h2>Contact</h2>
-      <p><strong>Phone:</strong> <a href="tel:6784999103">678-499-9103</a><br/>
-         <strong>Email:</strong> <a href="mailto:westsidepetcare.atl@gmail.com">westsidepetcare.atl@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:6784999103">678-499-9103</a></p>
+      <p><strong>Email:</strong> <a href="mailto:anne@westsidepetcare.com">anne@westsidepetcare.com</a></p>
     </div>
 
-    <div class="card">
-      <h2>Blog</h2>
-      <p>Catch up on
+    <!-- Blog Section -->
+    <div class="blog">
+      <h2>Read Our Blog</h2>
+      <p>Stay tuned for more pet care tips and stories from our clients!</p>
+      <a href="/blog" style="text-decoration: none; color: #5a6a3b; font-weight: bold;">Visit Our Blog</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Westside Pet Care | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
